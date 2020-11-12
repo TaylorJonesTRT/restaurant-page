@@ -1,4 +1,5 @@
 const menu = function() {
+<<<<<<< HEAD
     // DOM Elements
     const contentDiv = document.querySelector("#content");
 
@@ -36,6 +37,8 @@ const menu = function() {
 
     contentDiv.appendChild(containerDiv);
     containerDiv.appendChild(h1Tag);
+=======
+>>>>>>> 4994cbbac96e9fb44d73f386126d0f7b00c87f08
 }
 
 export {menu};
