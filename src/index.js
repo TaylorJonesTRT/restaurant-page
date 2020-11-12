@@ -1,5 +1,4 @@
-import {homepage} from "./modules/home";
-import {menu} from "./modules/menu";
+import {menu} from "./modules/menu.js";
 
 menu();
 
