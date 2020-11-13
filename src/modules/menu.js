@@ -1,41 +1,32 @@
-const menu = function() {
-    // DOM Elements
+const menupage = function() {
+    const menuItems = [
+        {
+            name: "Ribeye - $25",
+            desc: "A good piece of stead if I do say so myself"
+        },
+        {
+            name: "One Taco - $58",
+            desc: "Yes it's only 1 taco on a plate with only meat and cheese. But this is the best meat and cheese taco you'll ever have"
+        },
+        {
+            name: "Chmichanga",
+            desc: "That really good dish that Deadpool raves on and on about"
+        }
+    ]
+
     const contentDiv = document.querySelector("#content");
 
-    
-    // Creating Elements
-    // Navigation Bar Elements
-    const navbarDiv = document.createElement("div");
-    navbarDiv.classList.add("navbar");
-    const navLinkHome = document.createElement("a");
-    navLinkHome.setAttribute("href", "#");
-    navLinkHome.innerText = "Home";
-    const navLinkMenu = document.createElement("a");
-    navLinkMenu.setAttribute("href", "#");
-    navLinkMenu.classList.add("active");
-    navLinkMenu.innerText = "Menu";
-    const navLinkAbout = document.createElement("a");
-    navLinkAbout.setAttribute("href", "#");
-    navLinkAbout.innerText = "About";
-    const navLinkContact = document.createElement("a");
-    navLinkContact.setAttribute("href", "#");
-    navLinkContact.innerText = "Contact";
-    // Homepage Elements
     const containerDiv = document.createElement("div");
     containerDiv.classList.add("container");
     const h1Tag = document.createElement("h1");
     h1Tag.innerText = "Menu";
-
-
-    // Appending Elements to Each Other
-    contentDiv.appendChild(navbarDiv);
-    navbarDiv.appendChild(navLinkHome);
-    navbarDiv.appendChild(navLinkMenu);
-    navbarDiv.appendChild(navLinkAbout);
-    navbarDiv.appendChild(navLinkContact);
+    const menuItemDiv = document.createElement("div");
+    menuItemDiv.classList.add("menu-items");
+    const menuH4 = document.createElement("h4");
+    const menuSpan = document.createElement("span");
 
     contentDiv.appendChild(containerDiv);
     containerDiv.appendChild(h1Tag);
 }
 
-export {menu};
+export {menupage};
