@@ -4,22 +4,6 @@ const homepage = function() {
 
     
     // Creating Elements
-    // Navigation Bar Elements
-    const navbarDiv = document.createElement("div");
-    navbarDiv.classList.add("navbar");
-    const navLinkHome = document.createElement("a");
-    navLinkHome.setAttribute("href", "#");
-    navLinkHome.classList.add("active");
-    navLinkHome.innerText = "Home";
-    const navLinkMenu = document.createElement("a");
-    navLinkMenu.setAttribute("href", "#");
-    navLinkMenu.innerText = "Menu";
-    const navLinkAbout = document.createElement("a");
-    navLinkAbout.setAttribute("href", "#");
-    navLinkAbout.innerText = "About";
-    const navLinkContact = document.createElement("a");
-    navLinkContact.setAttribute("href", "#");
-    navLinkContact.innerText = "Contact";
     // Homepage Elements
     const imageDiv = document.createElement("div");
     imageDiv.classList.add("restaurant-image");
@@ -35,11 +19,6 @@ const homepage = function() {
 
 
     // Appending Elements to Each Other
-    contentDiv.appendChild(navbarDiv);
-    navbarDiv.appendChild(navLinkHome);
-    navbarDiv.appendChild(navLinkMenu);
-    navbarDiv.appendChild(navLinkAbout);
-    navbarDiv.appendChild(navLinkContact);
 
     contentDiv.appendChild(imageDiv);
     imageDiv.appendChild(backgroundImage);

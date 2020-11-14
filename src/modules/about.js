@@ -1,3 +1,5 @@
-const About = (() => {
+const aboutpage = function() {
 
-})();
+}
+
+export {aboutpage};
