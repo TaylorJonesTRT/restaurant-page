@@ -81,4 +81,9 @@ body {
 .google-map {
 	width: 25%;
 	height: auto;
+	margin-bottom: 10px;
+}
+
+.contact {
+	white-space: pre;
 }
