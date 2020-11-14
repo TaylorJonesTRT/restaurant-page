@@ -31,8 +31,7 @@ const InitialLoad = (() => {
         navbarDiv.appendChild(navLinkHref);
     }
     function createNavBar() {
-        let i = 0;
-        for (i; i < pages.length; i++) {
+        for (let i = 0; i < pages.length; i++) {
             createNavLink(pages[i]);
         }
         // Appending Elements to Each Other
@@ -44,22 +43,24 @@ const InitialLoad = (() => {
         while (contentDiv.lastChild) {
             contentDiv.removeChild(contentDiv.lastChild);
         }
+        while (navbarDiv.lastChild) {
+            navbarDiv.removeChild(navbarDiv.lastChild);
+        }
     }
 
     // Navigation Logic
     function navSelection(page) {
         // console.log(page.innerText);
         if (page.innerText === "Home") {
-            removeLinkEvents();
             clearContent();
-            homepage();
             createNavBar();
+            homepage();
             addLinkEvents();
         } else if (page.innerText === "Menu") {
-            removeLinkEvents();
             clearContent();
             createNavBar();
             menupage();
+            addLinkEvents();
         }
     }
 
@@ -79,7 +80,6 @@ const InitialLoad = (() => {
         });
     }
 
-    addLinkEvents();
 
 })();
 
