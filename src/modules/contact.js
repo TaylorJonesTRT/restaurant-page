@@ -14,7 +14,7 @@ const contactpage = (() => {
     spanTag.classList.add("contact");
     const imgTag = document.createElement("img");
     imgTag.classList.add("google-map");
-    imgTag.src = "/dist/images/google-map.png";
+    imgTag.src = "images/google-map.png";
     spanTag.textContent = "1122 East-West Highway Suite x/0 \r\n";
     spanTag.textContent += "West North, Texas \r\n";
     spanTag.textContent += "s111-222-3333";
