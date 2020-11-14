@@ -51,7 +51,6 @@ const InitialLoad = (() => {
 
     // Navigation Logic
     function navSelection(page) {
-        console.log(page);
         if (page.innerText === "Home") {
             clearContent();
             createNavBar();
