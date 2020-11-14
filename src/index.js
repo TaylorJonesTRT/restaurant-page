@@ -46,6 +46,7 @@ const InitialLoad = (() => {
         while (navbarDiv.lastChild) {
             navbarDiv.removeChild(navbarDiv.lastChild);
         }
+        removeLinkEvents();
     }
 
     // Navigation Logic
@@ -60,6 +61,16 @@ const InitialLoad = (() => {
             clearContent();
             createNavBar();
             menupage();
+            addLinkEvents();
+        } else if (page.innerText === "About") {
+            clearContent();
+            createNavBar();
+            aboutpage();
+            addLinkEvents();
+        } else if (page.innerText === "Contact") {
+            clearContent();
+            createNavBar();
+            contactpage();
             addLinkEvents();
         }
     }
